@@ -4,7 +4,7 @@ import express from 'express';
 
 import cors from 'cors';
 
-import { getAll } from './services/productService.js';
+import { getAll, getProductsByOrderId } from './services/productService.js';
 
 const port = 5000;
 
@@ -14,6 +14,14 @@ app.use(cors());
 
 app.get('/products', (req, res) => {
   const result = getAll();
+
+  res.send(result);
+});
+
+app.get("/orders/:orderId", (req, res) => {
+  let orderId = req.params.orderId;
+	
+	const result = getProductsByOrderId(orderId);
 
   res.send(result);
 });
