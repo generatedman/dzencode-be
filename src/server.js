@@ -18,7 +18,7 @@ app.get('/products', (req, res) => {
   res.send(result);
 });
 
-app.get("/orders/:orderId", (req, res) => {
+app.get('/orders/:orderId', (req, res) => {
   let orderId = req.params.orderId;
 	
 	const result = getProductsByOrderId(orderId);

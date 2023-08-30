@@ -84,5 +84,5 @@ export const deleteProductById = (id) => {
 };
 
 export const getProductsByOrderId = (id) => {
-  products.filter((product) => product.order === id);
+  return products.filter((product) => product.order === id);
 };
