@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-self-assign": ["error", { "props": true }],
+    "no-var": "error",
+    "no-empty-function": "error",
+    "for-direction": "error",
+    "no-self-compare": "error",
+    "eqeqeq": ["error", "always"],
+    "dot-notation": "error",
+    "default-case": "warn",
+    "curly": "error",
+		"import/extensions": "always",
+    "import/prefer-default-export": "off",
+		"no-tabs": "off",
+    "eol-last": ["error", "always"],
+    "init-declarations": ["warn", "always"],
+    "no-invalid-this": "error",
+    "no-lonely-if": "warn",
+    "no-return-assign": "error",
+    "no-useless-return": "warn",
+    "prefer-destructuring": "warn",
+    "array-bracket-spacing": "warn",
+    "brace-style": "error",
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": ["error", "never"],
+    "func-call-spacing": ["error", "never"],
+    "jsx-quotes": ["warn", "prefer-double"],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$"
+      }
+    ]
+  }
+}
